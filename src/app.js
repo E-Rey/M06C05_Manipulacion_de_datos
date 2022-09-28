@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 
 
 app.use('/', indexRouter);
-app.use(moviesRoutes);
+app.use('movies',moviesRoutes);
 app.use(genresRoutes);
 
 app.listen('3001', () => console.log('Servidor corriendo en el puerto 3001'));
